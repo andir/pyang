@@ -180,6 +180,7 @@ stmt_map = {
     'identity':
         ('identifier',
          [('base', '?'),
+          ('if-feature', '*'),
           ('status', '?'),
           ('description', '?'),
           ('reference', '?')]),
@@ -238,15 +239,18 @@ stmt_map = {
     'enum':
         ('enum-arg',
          [('value', '?'),
+          ('if-feature', '*'),
           ('status', '?'),
           ('description', '?'),
           ('reference', '?'),
           ]),
     'path':
         ('path-arg', []),
+
     'bit':
         ('identifier',
          [('position', '?'),
+          ('if-feature', '*'),
           ('status', '?'),
           ('description', '?'),
           ('reference', '?'),
@@ -418,6 +422,7 @@ stmt_map = {
     'refine':
         ('descendant-schema-nodeid',
          [('must', '*'),
+          ('if-feature', '*'),
           ('presence', '?'),
           ('default', '?'),
           ('config', '?'),
